@@ -1,0 +1,53 @@
+/* Features Section Styles */
+.features-section {
+  padding: 5rem 0;
+  background: var(--color-bg);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  color: var(--color-bg);
+  padding: 3rem 2rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.feature-card h3 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+  color: var(--color-bg);
+}
+
+.feature-card p {
+  margin: 0 0 1.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  color: var(--color-bg);
+}
+
+.feature-link {
+  font-weight: 600;
+  display: inline-block;
+  color: var(--color-bg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

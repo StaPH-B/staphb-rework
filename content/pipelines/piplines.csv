@@ -1,0 +1,3 @@
+pipeline_name,pipeline_url,pipeline_description,pipeline_language,pipeline_ownership,pipeline_keywords
+Spriggan,https://github.com/wslh-bio/spriggan,Spriggan is a pipeline used for assembly of bacterial whole genome sequence data and identification of antibiotic resistance genes.,Nextflow,Wisconsin State Laboratory of Hygiene,"HAI/AR, AR, Bacterial, Genome Assembly, MLST"
+Dryad,https://github.com/wslh-bio/dryad,Dryad is a Nextflow pipeline for examining prokaryote relatedness. Dryad can perform a reference free analysis and/or SNP analysis.,Nextflow,Wisconsin State Laboratory of Hygiene,"Outbreak Investigation, Bacterial Relatedness, SNP, Phylogenetic Trees, Phylogenomics, Prokaryote Relatedness, Core genome"
