@@ -1,4 +1,23 @@
-# Nuxt Content Starter
+# StaPH-B Nexus
+
+StaPH-B (State Public Health Bioinformatics) Nexus - A searchable resource platform for bioinformatics pipelines, training materials, and resources.
+
+## 📚 Documentation
+
+**For developers adding content or categories to the search:**
+
+- **[Nexus Search Guide](docs/NEXUS_SEARCH_GUIDE.md)** - Complete implementation guide
+- **[Quick Reference](docs/NEXUS_QUICK_REF.md)** - Fast lookup and code snippets (Start here!)
+- **[Architecture Diagrams](docs/NEXUS_DIAGRAMS.md)** - Visual system overview
+- **[CSS Theme Guide](app/assets/css/THEME_GUIDE.md)** - Customize site colors and design
+
+All documentation is in the [`/docs`](docs/) directory with a comprehensive [README](docs/README.md).
+
+## 🎨 Design System
+
+This project uses a harmonized CSS design system for easy theme customization. To change the site's color scheme, simply update the theme colors in [`app/assets/css/main.css`](app/assets/css/main.css). See the [Theme Guide](app/assets/css/THEME_GUIDE.md) for details.
+
+---
 
 Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
 

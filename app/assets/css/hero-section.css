@@ -1,8 +1,10 @@
-/* Hero Section Styles */
+/* ==========================================================================
+   Hero Section Component
+   ========================================================================== */
+
 .hero-section {
-  background: var(--color-primary);
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
-  color: var(--color-bg);
+  color: var(--color-text-inverse);
   padding: 6rem 0;
   text-align: center;
 }
@@ -10,14 +12,14 @@
 .hero-title {
   font-size: 4rem;
   font-weight: 700;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--space-sm);
   letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
   font-size: 1.75rem;
   font-weight: 400;
-  margin: 0 0 1.5rem;
+  margin: 0 0 var(--space-md);
   opacity: 0.95;
 }
 
@@ -31,42 +33,42 @@
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-sm);
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .hero-section .btn {
-  padding: 0.875rem 2rem;
-  border-radius: 0.5rem;
+  padding: 0.875rem var(--space-lg);
+  border-radius: var(--radius-md);
   font-weight: 600;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  transition: all 0.3s ease;
+  gap: var(--space-xs);
+  transition: all var(--transition-normal);
   border: 2px solid transparent;
 }
 
 .hero-section .btn-primary {
-  background: var(--color-bg);
+  background: var(--color-bg-primary);
   color: var(--color-primary);
 }
 
 .hero-section .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
   text-decoration: none;
 }
 
 .hero-section .btn-secondary {
   background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  color: var(--color-text-inverse);
+  border-color: var(--color-text-inverse);
 }
 
 .hero-section .btn-secondary:hover {
-  background: var(--color-bg);
+  background: var(--color-bg-primary);
   color: var(--color-primary);
   transform: translateY(-2px);
   text-decoration: none;
@@ -91,3 +93,4 @@
     font-size: 1rem;
   }
 }
+
