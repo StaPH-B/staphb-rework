@@ -8,13 +8,13 @@
     <div class="container">
       <img 
         v-if="isDarkMode"
-        src="~/assets/images/logos/staphb-logo-circ-white.png" 
+        src="~/assets/images/logos/staphb-logo-circ-black.png" 
         class="hero-logo" 
         alt="StaPH-B Logo" 
       />
       <img 
         v-else
-        src="~/assets/images/logos/staphb-logo-circ-black.png" 
+        src="~/assets/images/logos/staphb-logo-circ-white.png" 
         class="hero-logo" 
         alt="StaPH-B Logo" 
       />
@@ -65,19 +65,9 @@
   <div class="features-section">
     <div class="container">
       <div class="features-grid">
-        <NuxtLink to="/resources" class="feature-card">
-          <h3>Resources</h3>
-          <p>Guides, documentation, projects and more...</p>
-          <span class="feature-link">Explore Resources →</span>
-        </NuxtLink>
-        <NuxtLink to="/training" class="feature-card">
-          <h3>Training</h3>
-          <p>Training materials from previous workshops and seminars</p>
-          <span class="feature-link">View Training →</span>
-        </NuxtLink>
         <NuxtLink to="/videos" class="feature-card">
           <h3>Videos</h3>
-          <p>View recordings of our previous meetings</p>
+          <p>View recordings of our monthly meetings</p>
           <span class="feature-link">Watch Videos →</span>
         </NuxtLink>
       </div>
@@ -139,105 +129,9 @@
           </div>
         </a>
 
-        <a href="https://github.com/StaPH-B/monroe" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">📊</span>
-            <h3>Monroe</h3>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Genome assembly and quality metrics visualization tool. Provides interactive reports for NGS assembly quality assessment and comparison.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Assembly</span>
-              <span class="project-tag">QC</span>
-              <span class="project-tag">Visualization</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
+       
 
-        <a href="https://github.com/StaPH-B/staphb-wf-archive" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🔬</span>
-            <h3>Workflow Archive</h3>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Collection of validated bioinformatics workflows for pathogen genomics, including viral and bacterial analysis pipelines used in public health.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Workflows</span>
-              <span class="project-tag">Genomics</span>
-              <span class="project-tag">Pipelines</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://github.com/StaPH-B/seroba-docker" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🧬</span>
-            <h3>SeroBA</h3>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Serotyping tool for Streptococcus pneumoniae from Illumina NGS reads. Provides accurate capsular typing from sequence data for epidemiological investigations.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Serotyping</span>
-              <span class="project-tag">NGS</span>
-              <span class="project-tag">Pneumococcus</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://github.com/StaPH-B/cluster-vcf-autoanalysis" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🌳</span>
-            <h3>Cluster Analysis</h3>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              Automated cluster analysis from VCF files for outbreak investigation. Performs phylogenetic analysis and SNP-based clustering for pathogen surveillance.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Clustering</span>
-              <span class="project-tag">Phylogenetics</span>
-              <span class="project-tag">Outbreak</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
+        
       </div>
     </div>
   </div>
