@@ -16,7 +16,7 @@ export default defineContentConfig({
         pipeline_description: z.string(),
         pipeline_language: z.string(),
         pipeline_ownership: z.string(),
-        pipeline_keywords: z.string().transform(value => value.split(',').map(String))
+        pipeline_keywords: z.string().transform(value => value.split(',').map(k => k.trim()))
       }),
       // indexes: [
       //   {columns: ['pipeline_name']},

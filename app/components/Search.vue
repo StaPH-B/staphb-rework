@@ -1,6 +1,6 @@
 <template>
   <div class="search-container">
-    <form class="search-form" @submit.prevent>
+    <form class="search-form" @submit.prevent="handleSearch">
       <div class="search-wrapper">
           <label for="search-dropdown" class="sr-only">Search</label>
           <button @click.stop.prevent="toggleDropdown" type="button" class="category-button">
@@ -18,11 +18,12 @@
               </ul>
           </div>
           <input 
+            v-model="searchTerm"
             type="search" 
             id="search-dropdown" 
             class="search-input" 
             :placeholder="placeholder || 'Search...'" 
-            required
+            @input="handleInput"
           >
           <button type="submit" class="search-button">
             <svg class="icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
@@ -46,16 +47,30 @@ const props = defineProps<{
   placeholder?: string
 }>()
 
+const emit = defineEmits<{
+  search: [query: string, category: string]
+}>()
+
 const selectedCategory = ref(props.items?.[0] || { label: 'All categories', value: 'all' })
 const isOpen = ref(false)
+const searchTerm = ref('')
 
 const selectCategory = (item: DropdownItem) => {
   selectedCategory.value = item
   isOpen.value = false
+  emit('search', searchTerm.value, selectedCategory.value.value)
 }
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value
+}
+
+const handleSearch = () => {
+  emit('search', searchTerm.value, selectedCategory.value.value)
+}
+
+const handleInput = () => {
+  emit('search', searchTerm.value, selectedCategory.value.value)
 }
 </script>
 
