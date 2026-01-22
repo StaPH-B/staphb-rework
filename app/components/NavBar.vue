@@ -93,15 +93,15 @@ onMounted(() => {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-primary);
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   transition: all 0.3s ease;
 }
 
 .dark-mode .navbar {
-  background-color: rgba(26, 26, 26, 0.95);
+  background: rgba(26, 15, 46, 0.95);
+  border-bottom-color: var(--color-border-primary);
 }
 
 .nav-container {
@@ -250,8 +250,8 @@ onMounted(() => {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border-primary);
     padding: 1rem;
     transform: translateY(-100%);
     opacity: 0;
