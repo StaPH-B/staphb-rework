@@ -216,14 +216,21 @@ onMounted(() => {
   cursor: pointer;
   padding: 0.5rem;
   z-index: 1001;
+  position: relative;
+  margin-left: auto;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-line {
   width: 1.5rem;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: var(--color-text-primary);
   transition: all 0.3s ease;
   border-radius: 2px;
+  display: block;
 }
 
 .mobile-toggle.active .hamburger-line:nth-child(1) {
@@ -240,31 +247,41 @@ onMounted(() => {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   .mobile-toggle {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-links {
     position: fixed;
-    top: 5rem;
+    top: 0;
     left: 0;
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: var(--color-bg-secondary);
+    background: var(--color-bg-primary);
     border-bottom: 1px solid var(--color-border-primary);
     padding: 1rem;
+    padding-top: 5rem;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
   .nav-links.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-links li {
