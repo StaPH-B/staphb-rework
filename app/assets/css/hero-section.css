@@ -3,10 +3,18 @@
    ========================================================================== */
 
 .hero-section {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
-  color: var(--color-text-inverse);
-  padding: 6rem 0;
+  padding: 4rem 1.5rem;
   text-align: center;
+  background: var(--color-bg);
+}
+
+.hero-section .container {
+  background: linear-gradient(-135deg, var(--theme-primary-light) 0%, var(--theme-primary-dark) 100%);
+  color: var(--color-text-inverse);
+  padding: 4rem 2rem;
+  border-radius: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .hero-title {

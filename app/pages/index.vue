@@ -3,6 +3,30 @@
     <NavBar />
   </div>
 
+  <!-- Community Section -->
+  <div class="community-section">
+    <div class="container">
+      <h2 class="section-title">Join Our Community</h2>
+      <p class="community-description">
+        StaPH-B members possess a wide range of bioinformatics experience, from molecular biologists gaining familiarity with NGS and web-based applications, to experienced practitioners with advanced degrees capable of scripting custom tools.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/StaPH-B" target="_blank" class="social-link">
+          <SocialIcon icon="github" icon-class="social-icon" />
+          GitHub
+        </a>
+        <a href="https://join.slack.com/t/staph-b-dev/shared_invite/zt-w4ivhtq9-2XypNGWXY9vmyeWf0lABng" target="_blank" class="social-link">
+          <SocialIcon icon="slack" icon-class="social-icon" />
+          Slack
+        </a>
+        <a href="https://www.youtube.com/channel/UC4GughelEJxkJORLTCd51eg" target="_blank" class="social-link">
+          <SocialIcon icon="youtube" icon-class="social-icon" />
+          YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <div class="hero-section">
     <div class="container">
@@ -36,126 +60,46 @@
   <div class="mission-section">
     <div class="container">
       <h2 class="section-title">Our Mission</h2>
-      <div class="mission-grid">
-        <div class="mission-card">
-          <div class="mission-icon">🏗️</div>
-          <h3>Infrastructure</h3>
-          <p>Support the construction and maintenance of bioinformatics infrastructure within regional state public health laboratories.</p>
-        </div>
-        <div class="mission-card">
-          <div class="mission-icon">📚</div>
-          <h3>Training</h3>
-          <p>Provide training for public health scientists on the fundamentals and practice of bioinformatics.</p>
-        </div>
-        <div class="mission-card">
-          <div class="mission-icon">🔧</div>
-          <h3>Development</h3>
-          <p>Development of bioinformatics resources including tools, pipelines, and documentation.</p>
-        </div>
-        <div class="mission-card">
-          <div class="mission-icon">🤝</div>
-          <h3>Partnership</h3>
-          <p>Partner with the CDC and APHL to ensure compatibility and utility of our efforts.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Features Section -->
-  <div class="features-section">
-    <div class="container">
-      <div class="features-grid">
-        <NuxtLink to="/videos" class="feature-card">
-          <h3>Videos</h3>
-          <p>View recordings of our monthly meetings</p>
-          <span class="feature-link">Watch Videos →</span>
-        </NuxtLink>
-      </div>
-    </div>
-  </div>
-
-  <!-- Projects Section -->
-  <div class="projects-section">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/StaPH-B/docker-builds" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🐳</span>
-            <h3>Docker Builds</h3>
+      <div class="mission-items">
+        <div class="mission-item">
+          <div class="mission-content">
+            <h3>Infrastructure</h3>
+            <p>Support the construction and maintenance of bioinformatics infrastructure within regional state public health laboratories.</p>
           </div>
-          <div class="project-body">
-            <p class="project-description">
-              A curated collection of Docker images for bioinformatics tools used in public health laboratories. Ensures reproducibility and easy deployment across systems.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Docker</span>
-              <span class="project-tag">Containers</span>
-              <span class="project-tag">Tools</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
+          <div class="mission-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EInfrastructure Image Placeholder%3C/text%3E%3C/svg%3E" alt="Infrastructure" class="placeholder-image" />
           </div>
-        </a>
-
-        <a href="https://github.com/StaPH-B/staphb_toolkit" target="_blank" class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🧰</span>
-            <h3>StaPH-B ToolKit</h3>
-          </div>
-          <div class="project-body">
-            <p class="project-description">
-              A Python library for running containerized bioinformatics tools. Simplifies workflow execution and provides a unified interface for multiple tools.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Workflow</span>
-              <span class="project-tag">Automation</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-link-text">
-                View on GitHub
-                <svg class="project-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </a>
-
-       
-
+        </div>
         
-      </div>
-    </div>
-  </div>
-
-  <!-- Community Section -->
-  <div class="community-section">
-    <div class="container">
-      <h2 class="section-title">Join Our Community</h2>
-      <p class="community-description">
-        StaPH-B members possess a wide range of bioinformatics experience, from molecular biologists gaining familiarity with NGS and web-based applications, to experienced practitioners with advanced degrees capable of scripting custom tools.
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/StaPH-B" target="_blank" class="social-link">
-          <SocialIcon icon="github" icon-class="social-icon" />
-          GitHub
-        </a>
-        <a href="https://join.slack.com/t/staph-b-dev/shared_invite/zt-w4ivhtq9-2XypNGWXY9vmyeWf0lABng" target="_blank" class="social-link">
-          <SocialIcon icon="slack" icon-class="social-icon" />
-          Slack
-        </a>
-        <a href="https://www.youtube.com/channel/UC4GughelEJxkJORLTCd51eg" target="_blank" class="social-link">
-          <SocialIcon icon="youtube" icon-class="social-icon" />
-          YouTube
-        </a>
+        <div class="mission-item">
+          <div class="mission-content">
+            <h3>Training</h3>
+            <p>Provide training for public health scientists on the fundamentals and practice of bioinformatics.</p>
+          </div>
+          <div class="mission-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3ETraining Image Placeholder%3C/text%3E%3C/svg%3E" alt="Training" class="placeholder-image" />
+          </div>
+        </div>
+        
+        <div class="mission-item">
+          <div class="mission-content">
+            <h3>Development</h3>
+            <p>Development of bioinformatics resources including tools, pipelines, and documentation.</p>
+          </div>
+          <div class="mission-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EDevelopment Image Placeholder%3C/text%3E%3C/svg%3E" alt="Development" class="placeholder-image" />
+          </div>
+        </div>
+        
+        <div class="mission-item">
+          <div class="mission-content">
+            <h3>Partnership</h3>
+            <p>Partner with the CDC and APHL to ensure compatibility and utility of our efforts.</p>
+          </div>
+          <div class="mission-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EPartnership Image Placeholder%3C/text%3E%3C/svg%3E" alt="Partnership" class="placeholder-image" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -196,8 +140,6 @@ onMounted(() => {
 <style scoped>
 @import '~/assets/css/hero-section.css';
 @import '~/assets/css/mission-cards.css';
-@import '~/assets/css/features-cards.css';
-@import '~/assets/css/project-cards.css';
 
 .container {
   max-width: 1200px;
@@ -267,6 +209,12 @@ onMounted(() => {
 .social-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.page-separator {
+  height: 1px;
+  background-color: var(--color-border-primary);
+  margin: 2rem 0;
 }
 
 /* Responsive Design */

@@ -10,10 +10,6 @@
     --theme-primary-light: #4da3ff;
     --theme-primary-lighter: #80bdff;
     
-    /* Accent Colors (optional secondary palette) */
-    --theme-accent: #28a745;
-    --theme-accent-dark: #1e7e34;
-    
     /* Neutral Grays */
     --theme-gray-50: #f8f9fa;
     --theme-gray-100: #e9ecef;
@@ -30,29 +26,23 @@
     /* Backgrounds */
     --color-bg-primary: #ffffff;
     --color-bg-secondary: var(--theme-gray-50);
-    --color-bg-tertiary: var(--theme-gray-100);
     
     /* Text */
     --color-text-primary: #333333;
     --color-text-secondary: var(--theme-gray-500);
-    --color-text-tertiary: var(--theme-gray-400);
     --color-text-inverse: #ffffff;
     
     /* Borders */
     --color-border-primary: #cccccc;
-    --color-border-secondary: var(--theme-gray-200);
-    --color-border-light: var(--theme-gray-100);
     
     /* Interactive Elements */
     --color-primary: var(--theme-primary);
     --color-primary-hover: var(--theme-primary-dark);
-    --color-primary-active: var(--theme-primary-dark);
     
     /* Forms */
     --color-input-bg: #ffffff;
     --color-input-border: var(--color-border-primary);
     --color-input-focus: var(--theme-primary);
-    --color-input-placeholder: var(--theme-gray-400);
     
     /* Cards & Components */
     --color-card-bg: #ffffff;
@@ -64,7 +54,6 @@
     --shadow-sm: 0 2px 4px var(--color-card-shadow);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
     --shadow-lg: 0 10px 25px var(--color-card-shadow-hover);
-    --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.2);
     
     /* Transitions */
     --transition-fast: 0.15s ease;
@@ -91,25 +80,20 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Backgrounds */
-        --color-bg-primary: linear-gradient(135deg, #1a0f2e 0%, #0f0820 50%, #1a1030 100%);
-        --color-bg-secondary: #1a0f2e;
-        --color-bg-tertiary: #251841;
+        --color-bg-primary: #121212;
+        --color-bg-secondary: var(--theme-gray-800);
         
         /* Text */
         --color-text-primary: #e4e4e4;
         --color-text-secondary: #a0a0a0;
-        --color-text-tertiary: #808080;
         --color-text-inverse: var(--theme-gray-900);
         
         /* Borders */
         --color-border-primary: #444444;
-        --color-border-secondary: #3a3a3a;
-        --color-border-light: #2d2d2d;
         
         /* Interactive */
         --color-primary: var(--theme-primary-light);
         --color-primary-hover: var(--theme-primary-lighter);
-        --color-primary-active: var(--theme-primary-lighter);
         
         /* Forms */
         --color-input-bg: #1a0f2e;
@@ -126,19 +110,14 @@
 
 /* ===== DARK MODE - Manual Class Override ===== */
 .dark-mode {
-    --color-bg-primary: linear-gradient(135deg, #1a0f2e 0%, #0f0820 50%, #1a1030 100%);
-    --color-bg-secondary: #1a0f2e;
-    --color-bg-tertiary: #251841;
+    --color-bg-primary: #121212;
+    --color-bg-secondary: var(--theme-gray-800);
     --color-text-primary: #e4e4e4;
     --color-text-secondary: #a0a0a0;
-    --color-text-tertiary: #808080;
     --color-text-inverse: var(--theme-gray-900);
     --color-border-primary: #444444;
-    --color-border-secondary: #3a3a3a;
-    --color-border-light: #2d2d2d;
     --color-primary: var(--theme-primary-light);
     --color-primary-hover: var(--theme-primary-lighter);
-    --color-primary-active: var(--theme-primary-lighter);
     --color-input-bg: #1a0f2e;
     --color-input-border: #3d2d5c;
     --color-input-focus: var(--theme-primary-light);
@@ -152,17 +131,12 @@
 .light-mode {
     --color-bg-primary: #ffffff;
     --color-bg-secondary: var(--theme-gray-50);
-    --color-bg-tertiary: var(--theme-gray-100);
     --color-text-primary: #333333;
     --color-text-secondary: var(--theme-gray-500);
-    --color-text-tertiary: var(--theme-gray-400);
     --color-text-inverse: #ffffff;
     --color-border-primary: #cccccc;
-    --color-border-secondary: var(--theme-gray-200);
-    --color-border-light: var(--theme-gray-100);
     --color-primary: var(--theme-primary);
     --color-primary-hover: var(--theme-primary-dark);
-    --color-primary-active: var(--theme-primary-dark);
     --color-input-bg: #ffffff;
     --color-input-border: var(--color-border-primary);
     --color-input-focus: var(--theme-primary);

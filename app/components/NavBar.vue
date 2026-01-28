@@ -100,7 +100,7 @@ onMounted(() => {
 }
 
 .dark-mode .navbar {
-  background: rgba(26, 15, 46, 0.95);
+  background: var(--color-bg-primary);
   border-bottom-color: var(--color-border-primary);
 }
 
@@ -110,7 +110,8 @@ onMounted(() => {
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 3rem;
 }
 
 /* Logo Section */
@@ -127,7 +128,7 @@ onMounted(() => {
 }
 
 .logo {
-  height: 4rem;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -149,7 +150,7 @@ onMounted(() => {
 }
 
 .nav-link {
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.125rem;
@@ -303,7 +304,7 @@ onMounted(() => {
   }
 
   .logo {
-    height: 4.5rem;
+    height: 1.5rem;
   }
 }
 
