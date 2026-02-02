@@ -13,8 +13,14 @@ if (!page.value) {
 </script>
 
 <template>
+  <NavBar />
   <ContentRenderer
     v-if="page"
     :value="page"
   />
+
+  <Footer />
 </template>
+
+<style>
+</style>
