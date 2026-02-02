@@ -3,18 +3,20 @@
     <div class="nav-container">
       <!-- Logo Section -->
       <a href="/" class="logo-link">
-        <img 
-          v-if="isDarkMode"
-          src="~/assets/images/logos/staphb-logo-white.png" 
-          class="logo" 
-          alt="StaPH-B Logo" 
-        />
-        <img 
-          v-else
-          src="~/assets/images/logos/staphb-logo-black.png" 
-          class="logo" 
-          alt="StaPH-B Logo" 
-        />
+        <ClientOnly>
+          <img 
+            v-if="isDarkMode"
+            src="~/assets/images/logos/staphb-logo-white.png" 
+            class="logo" 
+            alt="StaPH-B Logo" 
+          />
+          <img 
+            v-else
+            src="~/assets/images/logos/staphb-logo-black.png" 
+            class="logo" 
+            alt="StaPH-B Logo" 
+          />
+        </ClientOnly>
       </a>
 
       <!-- Mobile Menu Toggle -->
@@ -67,7 +69,10 @@ const closeMenu = () => {
 }
 
 const checkDarkMode = () => {
-  isDarkMode.value = document.documentElement.classList.contains('dark-mode')
+  if (typeof window === 'undefined') return
+  isDarkMode.value = document.documentElement.classList.contains('dark-mode') ||
+    (!document.documentElement.classList.contains('light-mode') && 
+     window.matchMedia('(prefers-color-scheme: dark)').matches)
 }
 
 onMounted(() => {
