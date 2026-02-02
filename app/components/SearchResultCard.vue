@@ -1,10 +1,8 @@
 <template>
-  <div class="result-card">
+  <a :href="item.url" target="_blank" rel="noopener noreferrer" class="result-card">
     <div class="result-card-header">
       <h3 class="result-card-title">
-        <a :href="item.url" target="_blank" rel="noopener noreferrer">
-          {{ item.name }}
-        </a>
+        {{ item.name }}
       </h3>
       <span class="result-card-badge">{{ item.category }}</span>
     </div>
@@ -28,7 +26,7 @@
         {{ keyword }}
       </span>
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts" setup>

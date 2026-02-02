@@ -106,13 +106,13 @@
         --color-primary-hover: var(--theme-primary-lighter);
         
         /* Forms */
-        --color-input-bg: #1a0f2e;
-        --color-input-border: #3d2d5c;
+        --color-input-bg: var(--color-bg-secondary);
+        --color-input-border: var(--color-border-primary);
         --color-input-focus: var(--theme-primary-light);
         
         /* Cards */
-        --color-card-bg: #1a0f2e;
-        --color-card-border: #3d2d5c;
+        --color-card-bg: var(--color-bg-secondary);
+        --color-card-border: var(--color-border-primary);
         --color-card-shadow: rgba(0, 0, 0, 0.3);
         --color-card-shadow-hover: rgba(0, 0, 0, 0.5);
     }
@@ -128,11 +128,11 @@
     --color-border-primary: #444444;
     --color-primary: var(--theme-primary-light);
     --color-primary-hover: var(--theme-primary-lighter);
-    --color-input-bg: #1a0f2e;
-    --color-input-border: #3d2d5c;
+    --color-input-bg: var(--color-bg-secondary);
+    --color-input-border: var(--color-border-primary);
     --color-input-focus: var(--theme-primary-light);
-    --color-card-bg: #1a0f2e;
-    --color-card-border: #3d2d5c;
+    --color-card-bg: var(--color-bg-secondary);
+    --color-card-border: var(--color-border-primary);
     --color-card-shadow: rgba(0, 0, 0, 0.3);
     --color-card-shadow-hover: rgba(0, 0, 0, 0.5);
 }
