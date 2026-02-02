@@ -46,7 +46,3 @@ defineProps<{
   item: SearchResultItem
 }>()
 </script>
-
-<style scoped>
-@import '@/assets/css/search-results.css';
-</style>

@@ -5,7 +5,7 @@
 .hero-section {
   padding: 4rem 1.5rem;
   text-align: center;
-  background: var(--color-bg);
+  background: var(--color-bg-primary);
 }
 
 .hero-section .container {

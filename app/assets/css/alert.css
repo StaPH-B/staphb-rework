@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Alert Component
+   ========================================================================== */
+
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-primary);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alert:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

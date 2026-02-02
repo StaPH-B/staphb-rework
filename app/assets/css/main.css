@@ -2,6 +2,16 @@
    Design System - CSS Custom Properties
    ========================================================================== */
 
+@import './navbar.css';
+@import './footer.css';
+@import './search.css';
+@import './alert.css';
+@import './hero-section.css';
+@import './mission-cards.css';
+@import './search-result-card.css';
+@import './community-section.css';
+@import './nexus-page.css';
+
 :root {
     /* ===== THEME COLORS (Easy to customize!) ===== */
     /* Primary Brand Color */
@@ -235,12 +245,30 @@ a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .container-fluid {
     width: 100%;
     padding: 0 1rem;
+}
+
+/* ==========================================================================
+   Shared Page Elements
+   ========================================================================== */
+
+.hero-logo {
+  height: 20rem;
+  width: auto;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 0 3rem;
+  color: var(--color-text-primary);
 }
 
 /* ==========================================================================
@@ -367,5 +395,9 @@ select:focus {
 
     h3 {
         font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
     }
 }

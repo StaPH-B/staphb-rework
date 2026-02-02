@@ -1,0 +1,10 @@
+/* ==========================================================================
+   Footer Component
+   ========================================================================== */
+
+footer {
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border-primary);
+  margin-top: auto;
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}

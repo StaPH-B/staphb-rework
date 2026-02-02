@@ -61,43 +61,34 @@
     <div class="container">
       <h2 class="section-title">Our Mission</h2>
       <div class="mission-items">
+
         <div class="mission-item">
           <div class="mission-content">
-            <h3>Infrastructure</h3>
-            <p>Support the construction and maintenance of bioinformatics infrastructure within regional state public health laboratories.</p>
+            <h3>Community Building and Collaboration</h3>
+            <p>Foster a stronger community and collaborative partnerships between bioinformaticans, growing the impact of genomics and advanced data approaches in public health.</p>
           </div>
           <div class="mission-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EInfrastructure Image Placeholder%3C/text%3E%3C/svg%3E" alt="Infrastructure" class="placeholder-image" />
+            <img :src="workshop" alt="A picture of a group of bioinformaticians at a coding workshop." class="mission-image" />
           </div>
         </div>
         
         <div class="mission-item">
           <div class="mission-content">
-            <h3>Training</h3>
-            <p>Provide training for public health scientists on the fundamentals and practice of bioinformatics.</p>
+            <h3>Resource Development</h3>
+            <p>Further the development of tools and processes that enhance data quality, analysis efficiency, and access.</p>
           </div>
           <div class="mission-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3ETraining Image Placeholder%3C/text%3E%3C/svg%3E" alt="Training" class="placeholder-image" />
+            <img :src="laptop" alt="A picture of someone writing code on a laptop." class="mission-image" />
           </div>
         </div>
         
         <div class="mission-item">
           <div class="mission-content">
-            <h3>Development</h3>
-            <p>Development of bioinformatics resources including tools, pipelines, and documentation.</p>
+            <h3>Knowledge Sharing</h3>
+            <p>Construct a library of documentation and training resources providing a centralized location for hosting and indexing materials created both by StaPH-B and the community.</p>
           </div>
           <div class="mission-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EDevelopment Image Placeholder%3C/text%3E%3C/svg%3E" alt="Development" class="placeholder-image" />
-          </div>
-        </div>
-        
-        <div class="mission-item">
-          <div class="mission-content">
-            <h3>Partnership</h3>
-            <p>Partner with the CDC and APHL to ensure compatibility and utility of our efforts.</p>
-          </div>
-          <div class="mission-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Crect fill='%23e5e7eb' width='500' height='300'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='18' text-anchor='middle' dominant-baseline='middle' fill='%236b7280'%3EPartnership Image Placeholder%3C/text%3E%3C/svg%3E" alt="Partnership" class="placeholder-image" />
+            <img :src="container" alt="An abstract image of data in cubes." class="mission-image" />
           </div>
         </div>
       </div>
@@ -110,6 +101,12 @@
 </template>
 
 <script lang="ts" setup>
+
+import container from '~/assets/images/container_data.jpg';
+import laptop from '~/assets/images/laptop.jpg';
+import workshop from '~/assets/images/ont_workshop.png';
+
+
 useHead({
   title: 'StaPH-B - State Public Health Bioinformatics Group',
   meta: [
@@ -137,90 +134,3 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-@import '~/assets/css/hero-section.css';
-@import '~/assets/css/mission-cards.css';
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.hero-logo {
-  height: 20rem;
-  width: auto;
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 0 0 3rem;
-  color: var(--color-text);
-}
-
-/* Community Section */
-.community-section {
-  padding: 5rem 0;
-  text-align: center;
-  background: var(--color-bg);
-}
-
-.community-description {
-  max-width: 800px;
-  margin: 0 auto 2.5rem;
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-}
-
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 2rem;
-  background: var(--color-bg-secondary);
-  color: var(--color-text);
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-  text-decoration: none;
-}
-
-.social-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.page-separator {
-  height: 1px;
-  background-color: var(--color-border-primary);
-  margin: 2rem 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-}
-</style>

@@ -4,7 +4,7 @@
 
 .mission-section {
   padding: var(--space-2xl) 0;
-  background: var(--color-bg);
+  background: var(--color-bg-primary);
 }
 
 .mission-items {
@@ -40,12 +40,6 @@
 }
 
 .mission-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.placeholder-image {
   width: 100%;
   max-width: 500px;
   height: auto;

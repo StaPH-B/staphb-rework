@@ -105,12 +105,3 @@ onMounted(() => {
   }
 })
 </script>
-
-<style scoped>
-footer {
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  margin-top: auto;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-</style>
