@@ -3,10 +3,6 @@ import {z} from 'zod'
 
 export default defineContentConfig({
   collections: {
-    page_content: defineCollection({
-      type: 'page',
-      source: 'page_content/*.md',
-    }),
     pipelines: defineCollection({
       type: 'data',
       source: 'pipelines/*.csv',
@@ -18,15 +14,16 @@ export default defineContentConfig({
         pipeline_ownership: z.string(),
         pipeline_keywords: z.string().transform(value => value.split(',').map(k => k.trim()))
       }),
-      // indexes: [
-      //   {columns: ['pipeline_name']},
-      //   {columns: ['pipeline_description']},
-      //   {columns: ['pipeline_language']},
-      //   {columns: ['pipeline_ownership']},
-      //   {columns: ['pipeline_keywords']},
-
-      //   {columns: ['pipeline_language','pipeline_keywords']},
-      // ]
+    }),
+    resources: defineCollection({
+      type: 'data',
+      source: 'resources/*.csv',
+      schema: z.object({
+        resource_name: z.string(),
+        resource_url: z.url(),
+        resource_description: z.string(),
+        resource_keywords: z.string().transform(value => value.split(',').map(k => k.trim()))
+      }),
     })
   },
 })

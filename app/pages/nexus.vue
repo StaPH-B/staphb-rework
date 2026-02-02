@@ -56,11 +56,19 @@ interface PipelineRawData {
   pipeline_keywords: string | string[]
 }
 
+interface ResourceRawData {
+  resource_name: string
+  resource_url: string
+  resource_description: string
+  resource_keywords: string | string[]
+}
+
 // ============================================================================
 // Constants
 // ============================================================================
 
 const searchCategories = [
+  { label: 'All', value: 'all' },
   { label: 'Pipelines', value: 'pipelines' },
   { label: 'Trainings', value: 'trainings' },
   { label: 'Resources', value: 'resources' }
@@ -72,6 +80,10 @@ const searchCategories = [
 
 const { data: pipelinesData } = await useAsyncData('pipelines', async () => {
   return await queryCollection('pipelines').all()
+})
+
+const { data: resourcesData } = await useAsyncData('resources', async () => {
+  return await queryCollection('resources').all()
 })
 
 // ============================================================================
@@ -101,12 +113,29 @@ const transformPipelineData = (rawData: PipelineRawData): SearchResultItem => ({
   keywords: parseKeywords(rawData.pipeline_keywords)
 })
 
+/**
+ * Transforms raw resource data into SearchResultItem format
+ */
+const transformResourceData = (rawData: ResourceRawData): SearchResultItem => ({
+  name: rawData.resource_name || '',
+  url: rawData.resource_url || '',
+  description: rawData.resource_description || '',
+  category: 'Resources',
+  keywords: parseKeywords(rawData.resource_keywords)
+})
+
 // Load and transform all pipeline data
 const allResults = ref<SearchResultItem[]>([])
 
 if (pipelinesData.value?.[0]?.meta?.body) {
   const csvData = pipelinesData.value[0].meta.body as PipelineRawData[]
   allResults.value = csvData.map(transformPipelineData)
+}
+
+// Load and transform all resource data
+if (resourcesData.value?.[0]?.meta?.body) {
+  const csvData = resourcesData.value[0].meta.body as ResourceRawData[]
+  allResults.value = [...allResults.value, ...csvData.map(transformResourceData)]
 }
 
 // ============================================================================
