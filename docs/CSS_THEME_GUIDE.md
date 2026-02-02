@@ -207,7 +207,7 @@ All component CSS files use the centralized design system:
 
 - [features-cards.css](features-cards.css) - Feature card components
 - [hero-section.css](hero-section.css) - Hero/banner sections
-- [mission-cards.css](mission-cards.css) - Mission statement cards
+- [content-cards.css](content-cards.css) - Reusable content card layouts
 - [project-cards.css](project-cards.css) - Project showcase cards
 - [search-results.css](search-results.css) - Search result displays
 

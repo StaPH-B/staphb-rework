@@ -1,45 +1,45 @@
 /* ==========================================================================
-   Mission Cards Component
+   Content Cards Component
    ========================================================================== */
 
-.mission-section {
+.content-section {
   padding: var(--space-2xl) 0;
   background: var(--color-bg-primary);
 }
 
-.mission-items {
+.content-items {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.mission-item {
+.content-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
 }
 
-.mission-content {
+.content-card-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.mission-content h3 {
+.content-card-text h3 {
   font-size: 2rem;
   margin: 0 0 1rem;
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
-.mission-content p {
+.content-card-text p {
   font-size: 1.125rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin: 0;
 }
 
-.mission-image {
+.content-image {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -49,26 +49,26 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .mission-item {
+  .content-item {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
-  .mission-item-reverse {
+  .content-item-reverse {
     direction: ltr;
   }
 }
 
 @media (max-width: 768px) {
-  .mission-items {
+  .content-items {
     gap: 3rem;
   }
   
-  .mission-content h3 {
+  .content-card-text h3 {
     font-size: 1.5rem;
   }
   
-  .mission-content p {
+  .content-card-text p {
     font-size: 1rem;
   }
 }

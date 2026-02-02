@@ -9,7 +9,7 @@ app/assets/css/
 ├── main.css                 ⭐ Core design system & global styles
 ├── features-cards.css       🎴 Feature card component
 ├── hero-section.css         🦸 Hero/banner section component
-├── mission-cards.css        🎯 Mission card component
+├── content-cards.css        🎯 Reusable content card component
 ├── project-cards.css        📦 Project showcase cards
 ├── search-results.css       🔍 Search result displays
 ├── THEME_GUIDE.md          📖 Complete theming documentation
@@ -163,7 +163,7 @@ All component files follow consistent patterns:
 | **main.css** | Design system core | `:root`, utilities |
 | **features-cards.css** | Feature highlights | `.feature-card`, `.features-grid` |
 | **hero-section.css** | Page headers/banners | `.hero-section`, `.hero-title` |
-| **mission-cards.css** | Mission statements | `.mission-card`, `.mission-grid` |
+| **content-cards.css** | Reusable content layouts | `.content-item`, `.content-card-text` |
 | **project-cards.css** | Project showcases | `.project-card`, `.project-header` |
 | **search-results.css** | Search UI | `.result-card`, `.result-card-tag` |
 
