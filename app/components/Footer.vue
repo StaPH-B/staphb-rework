@@ -15,13 +15,13 @@
           <h3 class="text-heading font-semibold mb-3">Quick Links</h3>
           <ul class="space-y-2 text-sm">
             <li>
-              <a href="/" class="text-body hover:text-fg-brand transition-colors">Home</a>
+              <NuxtLink to="/" class="text-body hover:text-fg-brand transition-colors">Home</NuxtLink>
             </li>
             <li>
-              <a href="/nexus" class="text-body hover:text-fg-brand transition-colors">Nexus</a>
+              <NuxtLink to="/nexus" class="text-body hover:text-fg-brand transition-colors">Nexus</NuxtLink>
             </li>
             <li>
-              <a href="/about" class="text-body hover:text-fg-brand transition-colors">About</a>
+              <NuxtLink to="/about" class="text-body hover:text-fg-brand transition-colors">About</NuxtLink>
             </li>
             <li>
               <a href="https://github.com/StaPH-B" target="_blank" rel="noopener noreferrer" class="text-body hover:text-fg-brand transition-colors">

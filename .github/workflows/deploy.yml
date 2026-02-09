@@ -41,6 +41,8 @@ jobs:
 
       - name: Static HTML export with Nuxt
         run: pnpm run generate
+        env:
+          BASE_PATH: /staphb-rework/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <!-- Logo Section -->
-      <a href="/" class="logo-link">
+      <NuxtLink to="/" class="logo-link">
         <ClientOnly>
           <img 
             v-if="isDarkMode"
@@ -17,7 +17,7 @@
             alt="StaPH-B Logo" 
           />
         </ClientOnly>
-      </a>
+      </NuxtLink>
 
       <!-- Mobile Menu Toggle -->
       <button 
@@ -34,9 +34,9 @@
 
       <!-- Navigation Links -->
       <ul class="nav-links" :class="{ 'active': isMenuOpen }">
-        <li><a href="/" class="nav-link" @click="closeMenu">Home</a></li>
-        <li><a href="/nexus" class="nav-link" @click="closeMenu">Nexus</a></li>
-        <li><a href="/about" class="nav-link" @click="closeMenu">About</a></li>
+        <li><NuxtLink to="/" class="nav-link" @click="closeMenu">Home</NuxtLink></li>
+        <li><NuxtLink to="/nexus" class="nav-link" @click="closeMenu">Nexus</NuxtLink></li>
+        <li><NuxtLink to="/about" class="nav-link" @click="closeMenu">About</NuxtLink></li>
         <li>
           <a 
             href="https://github.com/StaPH-B" 
